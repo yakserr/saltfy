@@ -9,11 +9,11 @@ import Slider from 'react-slick';
 export const Specialty: FC = () => {
 	return (
 		<>
-			<div className="px-6 py-6 bg-blue-400">
+			<div className="px-6 py-6 bg-blue-400 lg:px-36 lg:py-20">
 				<div className="px-6 py-6 bg-white">
-					<h2 className="text-2xl font-bold text-sky-500">OUR SPECIALTY</h2>
+					<h2 className="text-2xl font-bold text-sky-500 lg:text-4xl">OUR SPECIALTY</h2>
 					<div className="mt-4">
-						<p className="text-sm font-normal text-neutral-500">
+						<p className="text-sm font-normal text-neutral-500 lg:text-lg">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod libero vel leo auctor,
 							in venenatis nulla consequat. Sed commodo nunc sit amet congue aliquam.
 						</p>
@@ -22,20 +22,20 @@ export const Specialty: FC = () => {
 						<Slider>
 							<div className="flex items-center justify-center text-center">
 								<Image src={img3} alt="Speed-impv" className="mx-auto" />
-								<h3 className="mt-4 text-lg font-semibold text-neutral-500">Speed-impv</h3>
+								<h3 className="mt-4 text-lg font-semibold text-neutral-500 lg:text-xl">Speed-impv</h3>
 							</div>
 							<div className="flex items-center justify-center text-center">
 								<Image src={img1} alt="Exhaust" className="mx-auto" />
-								<h3 className="mt-4 text-lg font-semibold text-neutral-500">Exhaust</h3>
+								<h3 className="mt-4 text-lg font-semibold text-neutral-500 lg:text-xl">Exhaust</h3>
 							</div>
 							<div className="flex items-center justify-center text-center">
 								<Image src={img2} alt="Accesories" className="mx-auto" />
-								<h3 className="mt-4 text-lg font-semibold text-neutral-500">Accesories</h3>
+								<h3 className="mt-4 text-lg font-semibold text-neutral-500 lg:text-xl">Accesories</h3>
 							</div>
 						</Slider>
 					</div>
 					<div className="my-4">
-						<p className="text-sm font-light text-center text-neutral-400">
+						<p className="text-sm font-light text-center text-neutral-400 lg:text-lg">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod libero vel leo auctor,
 							in venenatis nulla consequat. Sed commodo nunc sit amet congue aliquam.
 						</p>

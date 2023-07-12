@@ -13,18 +13,18 @@ export const Profile: FC = () => {
 	};
 	return (
 		<>
-			<div className="px-10 py-6 bg-white">
+			<div className="px-10 py-6 bg-white lg:px-36 lg:py-20">
 				<h2 className="text-4xl font-semibold text-sky-500">Who we are</h2>
 				<Slider {...settings}>
 					{profileItems.map((item) => (
 						<div className="mt-3" key={item.key}>
-							<h3 className="text-lg font-normal text-black">{item.title}</h3>
-							<p className="mt-2 text-sm font-normal text-neutral-500">{item.desc}</p>
+							<h3 className="text-lg font-normal text-neutral-900 lg:text-xl">{item.title}</h3>
+							<p className="mt-2 text-sm font-normal text-neutral-500 lg:text-lg">{item.desc}</p>
 						</div>
 					))}
 				</Slider>
 				<div className="box-content mt-6">
-					<div className="flex items-center justify-between">
+					<div className="flex items-center justify-between lg:justify-around">
 						<div>
 							<span className="text-2xl font-medium ext-zinc-800">01</span>
 							<span className="mx-1 text-2xl font-medium text-stone-300 leading">/</span>

@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const Footer: FC = () => {
 	return (
 		<>
-			<footer className="px-10 py-6 bg-blue-900">
+			<footer className="px-10 py-6 bg-blue-900 lg:px-36 lg:py-20">
 				<Image src={LogoImageWhite} alt="Logo" />
 				<div className="p-4 mt-6 bg-white">
 					<div className="relative inline-block w-64 mb-4">
@@ -22,16 +22,16 @@ export const Footer: FC = () => {
 							</svg>
 						</div>
 					</div>
-					<div className="box-content w-36">
-						<p className="text-sm text-blue-500">
+					<div className="box-content w-36 lg:w-48">
+						<p className="text-sm text-blue-500 lg:text-lg ">
 							Jl. Lembong No 8 Kel. Braga Kec. Sumur Bandung, Kota Bandung, Jawa Barat
 						</p>
 					</div>
 				</div>
 				<div className="mt-6">
-					<p className="text-lg font-normal text-white">Who We Are</p>
-					<p className="text-lg font-normal text-white">WOur Values</p>
-					<p className="text-lg font-normal text-white">The Perks</p>
+					<p className="mb-1 text-lg font-normal text-white lg:text-xl">Who We Are</p>
+					<p className="mb-1 text-lg font-normal text-white lg:text-xl">Our Values</p>
+					<p className="mb-1 text-lg font-normal text-white lg:text-xl">The Perks</p>
 				</div>
 			</footer>
 		</>

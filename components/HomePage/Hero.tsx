@@ -7,8 +7,8 @@ export const Hero: FC = () => {
 	return (
 		<>
 			<Image src={HeroImage} alt="Hero Image" className="object-cover w-full h-full" priority />
-			<div className="px-10 py-6 bg-blue-500">
-				<h1 className="text-4xl font-bold text-white">
+			<div className="px-10 py-6 bg-blue-500 lg:py-20 lg:px-36">
+				<h1 className="text-4xl font-bold text-white lg:h-24">
 					Discover
 					<br />
 					Your Wonder
