@@ -1,19 +1,28 @@
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 import { FC } from 'react';
+import Slider from 'react-slick';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import { profileItems } from '@/lib/const';
 
 export const Profile: FC = () => {
+	const settings = {
+		arrows: false,
+	};
 	return (
 		<>
 			<div className="px-10 py-6 bg-white">
 				<h2 className="text-4xl font-semibold text-sky-500">Who we are</h2>
-				<div className="mt-2">
-					<h3 className="text-lg font-normal text-black">Technology Company</h3>
-					<p className="text-sm font-normal text-neutral-500">
-						Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium,
-						totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-						dicta sunt explicabo.
-					</p>
-				</div>
+				<Slider {...settings}>
+					{profileItems.map((item) => (
+						<div className="mt-3" key={item.key}>
+							<h3 className="text-lg font-normal text-black">{item.title}</h3>
+							<p className="mt-2 text-sm font-normal text-neutral-500">{item.desc}</p>
+						</div>
+					))}
+				</Slider>
 				<div className="box-content mt-6">
 					<div className="flex items-center justify-between">
 						<div>
